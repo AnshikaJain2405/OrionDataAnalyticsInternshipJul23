@@ -1,0 +1,14 @@
+project:
+  title: "docs"
+
+sources:
+  - notebooks\EDA.qmd
+  - notebooks\ML.qmd
+
+output:
+  format: qmd
+
+
+
+
+
