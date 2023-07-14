@@ -1,0 +1,12 @@
+project:
+  title: "docs"
+
+format:
+  html:
+    toc: true
+    code-fold: true
+    code-summary: "Show the code"
+    code-overflow: wrap
+    code-tools: true
+
+

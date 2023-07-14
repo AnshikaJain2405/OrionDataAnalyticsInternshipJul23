@@ -1,0 +1,27 @@
+---
+title: "docs"
+author: Anshika Jain
+---
+
+## ABSTRACT
+
+Credit Card default is a common issue that banks face each month. This project focuses on using the data provided by one such bank and working on that data. During this project the data was cleaned, and then trained to be used to create an effective model identifying defaulters.
+A number of models were applied to train the dataset, including random forest, logistic regression, SVM, and naive bayes. 
+This project helps to find which user will default in the upcoming month based on the given demographics.
+
+{{< include EDA.qmd >}}
+
+{{< include ML.qmd >}}
+
+## CONCLUSIONS
+
+- With the skewness removed the skewed variables are important in finding the probability.
+- The paid amount and bill amount along with the repayment status of the previous month have the most effect on the chances of default of a user.
+- The model is best trained using random forest on these variables.
+
+## SOME INTERESTING CONCLUSIONS
+
+- There are more men defaulters than women.
+- Most people defaulting have defaulted in the previous month also.
+- People in highshool belong to the higher age group of around 40.
+- People in highschool have the least amount of credit limit.
