@@ -1,14 +1,12 @@
 project:
   title: "docs"
 
-sources:
-  - notebooks\EDA.qmd
-  - notebooks\ML.qmd
-
-output:
-  format: qmd
-
-
-
+format:
+  html:
+    toc: true
+    code-fold: true
+    code-summary: "Show the code"
+    code-overflow: wrap
+    code-tools: true
 
 
