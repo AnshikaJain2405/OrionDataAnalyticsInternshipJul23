@@ -84,6 +84,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">ABSTRACT</a></li>
+  <li><a href="#eda" id="toc-eda" class="nav-link" data-scroll-target="#eda">EDA</a></li>
   <li><a href="#data-ingestion" id="toc-data-ingestion" class="nav-link" data-scroll-target="#data-ingestion">DATA INGESTION</a></li>
   <li><a href="#data-cleaning" id="toc-data-cleaning" class="nav-link" data-scroll-target="#data-cleaning">DATA CLEANING</a>
   <ul class="collapse">
@@ -120,6 +121,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#creating-subplot" id="toc-creating-subplot" class="nav-link" data-scroll-target="#creating-subplot">Creating Subplot</a></li>
   </ul></li>
   <li><a href="#extracting-cleaned-data" id="toc-extracting-cleaned-data" class="nav-link" data-scroll-target="#extracting-cleaned-data">Extracting Cleaned Data</a></li>
+  <li><a href="#modeling" id="toc-modeling" class="nav-link" data-scroll-target="#modeling">MODELING</a></li>
   <li><a href="#data-ingestion-1" id="toc-data-ingestion-1" class="nav-link" data-scroll-target="#data-ingestion-1">DATA INGESTION</a></li>
   <li><a href="#st-model-logistic-regression" id="toc-st-model-logistic-regression" class="nav-link" data-scroll-target="#st-model-logistic-regression">1st MODEL: LOGISTIC REGRESSION</a></li>
   <li><a href="#nd-model-logistic-regression" id="toc-nd-model-logistic-regression" class="nav-link" data-scroll-target="#nd-model-logistic-regression">2nd MODEL: LOGISTIC REGRESSION</a></li>
@@ -161,6 +163,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="abstract" class="level2">
 <h2 class="anchored" data-anchor-id="abstract">ABSTRACT</h2>
 <p>Credit Card default is a common issue that banks face each month. This project focuses on using the data provided by one such bank and working on that data. During this project the data was cleaned, and then trained to be used to create an effective model identifying defaulters. A number of models were applied to train the dataset, including random forest, logistic regression, SVM, and naive bayes. This project helps to find which user will default in the upcoming month based on the given demographics.</p>
+</section>
+<section id="eda" class="level2">
+<h2 class="anchored" data-anchor-id="eda">EDA</h2>
 <ul>
 <li>pandas to be able to read data</li>
 <li>matplotlib to plot bar charts and basic histograms</li>
@@ -224,7 +229,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 <div class="itables">
 
-<table id="1daf6d17-6b7e-4cb3-a1fb-1c13f49bc445" class="display nowrap table table-sm table-striped small" data-quarto-postprocess="true">
+<table id="6fbf3cb6-61fe-4b14-9e3c-81bafd401bc4" class="display nowrap table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header" style="text-align: right;">
 <th data-quarto-table-cell-role="th">ID</th>
@@ -300,7 +305,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
                 dt_args["data"] = data;
 
                 
-                $('#1daf6d17-6b7e-4cb3-a1fb-1c13f49bc445').DataTable(dt_args);
+                $('#6fbf3cb6-61fe-4b14-9e3c-81bafd401bc4').DataTable(dt_args);
             });
         })
     }
@@ -339,7 +344,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 <div class="itables">
 
-<table id="8bec711c-1675-4edd-9408-eea64d2266f5" class="display nowrap table table-sm table-striped small" data-quarto-postprocess="true">
+<table id="c76eef6d-cf53-4774-be3f-398232cec08d" class="display nowrap table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header" style="text-align: right;">
 <th data-quarto-table-cell-role="th">ID</th>
@@ -415,7 +420,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
                 dt_args["data"] = data;
 
                 
-                $('#8bec711c-1675-4edd-9408-eea64d2266f5').DataTable(dt_args);
+                $('#c76eef6d-cf53-4774-be3f-398232cec08d').DataTable(dt_args);
             });
         })
     }
@@ -494,7 +499,7 @@ memory usage: 5.7 MB</code></pre>
 </style>
 <div class="itables">
 
-<table id="37830011-460c-4bd8-9dbd-a43e2d94ad50" class="display nowrap table table-sm table-striped small" data-quarto-postprocess="true">
+<table id="eda7da68-f43a-478d-a397-f190885918d5" class="display nowrap table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header" style="text-align: right;">
 <th data-quarto-table-cell-role="th"></th>
@@ -572,7 +577,7 @@ memory usage: 5.7 MB</code></pre>
                 dt_args["data"] = data;
 
                 
-                $('#37830011-460c-4bd8-9dbd-a43e2d94ad50').DataTable(dt_args);
+                $('#eda7da68-f43a-478d-a397-f190885918d5').DataTable(dt_args);
             });
         })
     }
@@ -656,7 +661,7 @@ Unique values in default.payment.next.month: [1 0]</code></pre>
 </style>
 <div class="itables">
 
-<table id="efdef601-3bfd-4c6a-8f53-00895db34ccc" class="display nowrap table table-sm table-striped small" data-quarto-postprocess="true">
+<table id="dff081f7-cb7e-4a06-bc0e-6fe49818bf6b" class="display nowrap table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header" style="text-align: right;">
 <th data-quarto-table-cell-role="th"></th>
@@ -686,7 +691,7 @@ Unique values in default.payment.next.month: [1 0]</code></pre>
                 dt_args["data"] = data;
 
                 
-                $('#efdef601-3bfd-4c6a-8f53-00895db34ccc').DataTable(dt_args);
+                $('#dff081f7-cb7e-4a06-bc0e-6fe49818bf6b').DataTable(dt_args);
             });
         })
     }
@@ -773,7 +778,7 @@ Unique values in default.payment.next.month: [1 0]</code></pre>
 </style>
 <div class="itables">
 
-<table id="8d58128d-7833-4aca-b583-d1f8c15ccb16" class="display nowrap table table-sm table-striped small" data-quarto-postprocess="true">
+<table id="a0936c43-425d-4851-bf08-2813f4f61d8b" class="display nowrap table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header" style="text-align: right;">
 <th data-quarto-table-cell-role="th">ID</th>
@@ -849,7 +854,7 @@ Unique values in default.payment.next.month: [1 0]</code></pre>
                 dt_args["data"] = data;
 
                 
-                $('#8d58128d-7833-4aca-b583-d1f8c15ccb16').DataTable(dt_args);
+                $('#a0936c43-425d-4851-bf08-2813f4f61d8b').DataTable(dt_args);
             });
         })
     }
@@ -892,7 +897,7 @@ Unique values in default.payment.next.month: [1 0]</code></pre>
 </style>
 <div class="itables">
 
-<table id="c6cba5be-87e5-47dc-86cc-c3f150146a85" class="display nowrap table table-sm table-striped small" data-quarto-postprocess="true">
+<table id="217947eb-c304-4ea6-ada1-e3c1ff582b0f" class="display nowrap table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header" style="text-align: right;">
 <th data-quarto-table-cell-role="th">ID</th>
@@ -968,7 +973,7 @@ Unique values in default.payment.next.month: [1 0]</code></pre>
                 dt_args["data"] = data;
 
                 
-                $('#c6cba5be-87e5-47dc-86cc-c3f150146a85').DataTable(dt_args);
+                $('#217947eb-c304-4ea6-ada1-e3c1ff582b0f').DataTable(dt_args);
             });
         })
     }
@@ -1011,7 +1016,7 @@ Unique values in default.payment.next.month: [1 0]</code></pre>
 </style>
 <div class="itables">
 
-<table id="91ceeff4-186d-4cb0-9a8b-9aa538421998" class="display nowrap table table-sm table-striped small" data-quarto-postprocess="true">
+<table id="af87ee02-8550-46fb-b258-53b2910f2853" class="display nowrap table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header" style="text-align: right;">
 <th data-quarto-table-cell-role="th">ID</th>
@@ -1087,7 +1092,7 @@ Unique values in default.payment.next.month: [1 0]</code></pre>
                 dt_args["data"] = data;
 
                 
-                $('#91ceeff4-186d-4cb0-9a8b-9aa538421998').DataTable(dt_args);
+                $('#af87ee02-8550-46fb-b258-53b2910f2853').DataTable(dt_args);
             });
         })
     }
@@ -1969,6 +1974,9 @@ percentage of highschool defaulters:  24.527150701647347</code></pre>
 <span id="cb109-4"><a href="#cb109-4" aria-hidden="true" tabindex="-1"></a>df.to_csv(extract_info, index<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
+</section>
+<section id="modeling" class="level2">
+<h2 class="anchored" data-anchor-id="modeling">MODELING</h2>
 <ul>
 <li>imported pandas to read csv</li>
 <li>imports from sckit library:</li>
@@ -3134,7 +3142,7 @@ Kappa Score: 0.3602844173846296</code></pre>
 </style>
 <div class="itables">
 
-<table id="3dd07fb9-53f5-4c72-834c-858d04c0aca7" class="display nowrap table table-sm table-striped small" data-quarto-postprocess="true">
+<table id="3c2aa795-e98a-4429-bdfd-ecfa59bd232a" class="display nowrap table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header" style="text-align: right;">
 <th data-quarto-table-cell-role="th">model</th>
@@ -3174,7 +3182,7 @@ Kappa Score: 0.3602844173846296</code></pre>
                 dt_args["data"] = data;
 
                 
-                $('#3dd07fb9-53f5-4c72-834c-858d04c0aca7').DataTable(dt_args);
+                $('#3c2aa795-e98a-4429-bdfd-ecfa59bd232a').DataTable(dt_args);
             });
         })
     }
@@ -3500,22 +3508,25 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb177-9"><a href="#cb177-9" aria-hidden="true" tabindex="-1"></a>A number of models were applied to train the dataset, including random forest, logistic regression, SVM, and naive bayes. </span>
 <span id="cb177-10"><a href="#cb177-10" aria-hidden="true" tabindex="-1"></a>This project helps to find which user will default in the upcoming month based on the given demographics.</span>
 <span id="cb177-11"><a href="#cb177-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb177-12"><a href="#cb177-12" aria-hidden="true" tabindex="-1"></a>{{&lt; include EDA.qmd &gt;}}</span>
+<span id="cb177-12"><a href="#cb177-12" aria-hidden="true" tabindex="-1"></a><span class="fu">## EDA </span></span>
 <span id="cb177-13"><a href="#cb177-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb177-14"><a href="#cb177-14" aria-hidden="true" tabindex="-1"></a>{{&lt; include ML.qmd &gt;}}</span>
+<span id="cb177-14"><a href="#cb177-14" aria-hidden="true" tabindex="-1"></a>{{&lt; include _EDA.qmd &gt;}}</span>
 <span id="cb177-15"><a href="#cb177-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb177-16"><a href="#cb177-16" aria-hidden="true" tabindex="-1"></a><span class="fu">## CONCLUSIONS</span></span>
-<span id="cb177-17"><a href="#cb177-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb177-18"><a href="#cb177-18" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>With the skewness removed the skewed variables are important in finding the probability.</span>
-<span id="cb177-19"><a href="#cb177-19" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The paid amount and bill amount along with the repayment status of the previous month have the most effect on the chances of default of a user.</span>
-<span id="cb177-20"><a href="#cb177-20" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The model is best trained using random forest on these variables.</span>
-<span id="cb177-21"><a href="#cb177-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb177-22"><a href="#cb177-22" aria-hidden="true" tabindex="-1"></a><span class="fu">## SOME INTERESTING CONCLUSIONS</span></span>
-<span id="cb177-23"><a href="#cb177-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb177-24"><a href="#cb177-24" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>There are more men defaulters than women.</span>
-<span id="cb177-25"><a href="#cb177-25" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Most people defaulting have defaulted in the previous month also.</span>
-<span id="cb177-26"><a href="#cb177-26" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>People in highshool belong to the higher age group of around 40.</span>
-<span id="cb177-27"><a href="#cb177-27" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>People in highschool have the least amount of credit limit.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb177-16"><a href="#cb177-16" aria-hidden="true" tabindex="-1"></a><span class="fu">## MODELING</span></span>
+<span id="cb177-17"><a href="#cb177-17" aria-hidden="true" tabindex="-1"></a>{{&lt; include _ML.qmd &gt;}}</span>
+<span id="cb177-18"><a href="#cb177-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb177-19"><a href="#cb177-19" aria-hidden="true" tabindex="-1"></a><span class="fu">## CONCLUSIONS</span></span>
+<span id="cb177-20"><a href="#cb177-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb177-21"><a href="#cb177-21" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>With the skewness removed the skewed variables are important in finding the probability.</span>
+<span id="cb177-22"><a href="#cb177-22" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The paid amount and bill amount along with the repayment status of the previous month have the most effect on the chances of default of a user.</span>
+<span id="cb177-23"><a href="#cb177-23" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The model is best trained using random forest on these variables.</span>
+<span id="cb177-24"><a href="#cb177-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb177-25"><a href="#cb177-25" aria-hidden="true" tabindex="-1"></a><span class="fu">## SOME INTERESTING CONCLUSIONS</span></span>
+<span id="cb177-26"><a href="#cb177-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb177-27"><a href="#cb177-27" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>There are more men defaulters than women.</span>
+<span id="cb177-28"><a href="#cb177-28" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Most people defaulting have defaulted in the previous month also.</span>
+<span id="cb177-29"><a href="#cb177-29" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>People in highshool belong to the higher age group of around 40.</span>
+<span id="cb177-30"><a href="#cb177-30" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>People in highschool have the least amount of credit limit.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
