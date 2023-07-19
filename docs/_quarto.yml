@@ -9,17 +9,7 @@ format:
     code-overflow: wrap
     code-tools: true
     
-    # before_body: |
-    #   <a href="https://github.com/AnshikaJain2405/OrionDataAnalyticsInternshipJul23" target="_blank" class="github-link">
-    #     <i class="fab fa-github"></i>
-    #   </a>
-    # before_body_append: |
-    # <style>
-    #   .github-link {
-    #     display: inline-block;
-    #     margin-right: 10px;
-    #     color: #000;
-    #     text-decoration: none;
-    #     font-size: 24px;
-    #   }
-    # </style>
+
+
+    
+      
