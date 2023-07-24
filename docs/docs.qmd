@@ -1,6 +1,7 @@
 ---
 title: "docs"
 author: Anshika Jain
+
 ---
 
 ## ABSTRACT
@@ -9,9 +10,14 @@ Credit Card default is a common issue that banks face each month. This project f
 A number of models were applied to train the dataset, including random forest, logistic regression, SVM, and naive bayes. 
 This project helps to find which user will default in the upcoming month based on the given demographics.
 
-{{< include EDA.qmd >}}
+You can find the the github repository for my project here: [![Github](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)](https://github.com/AnshikaJain2405/OrionDataAnalyticsInternshipJul23/)
 
-{{< include ML.qmd >}}
+## EDA 
+
+{{< include _EDA.qmd >}}
+
+## MODELING
+{{< include _ML.qmd >}}
 
 ## CONCLUSIONS
 
